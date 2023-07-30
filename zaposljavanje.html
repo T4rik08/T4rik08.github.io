@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zaposljavanje</title>
+    <link rel="icon" type="image/jpeg" href="images/Red_Rose.jpg.jpg">
+</head>
+
+<body>
+    <h1>Pekara "Ruža"</h1>
+    <h2>Ispunite formu za narudžbu</h2>
+
+    <form action="index.php" method="post" enctype="multipart/form-data">
+
+        <label for="Ime">Ime:</label>
+        <input type="text" id="Ime" required><br><br>
+
+
+        <label for="Prezime">Prezime:</label>
+        <input type="text" id="Prezime" required><br><br>
+
+        <label for="Datum">Datum rođenja:</label>
+        <input type="date" id="Datum" required><br><br>
+
+        <label for="Email">E-mail adresa:</label>
+        <input type="email" id="Email" required placeholder="emailadresa@mail.com"><br><br>
+
+        <label for="Telefon">Broj telefona:</label>
+        <input type="tel" id="Telefon" placeholder="644-363-130" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br><br>
+
+        <label for="Placanje">Način plaćanja:</label>
+        <select id="Placanje" required>
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Keš">Keš</option>
+        </select><br><br>
+
+        <label for="Kolicina">Količina:</label>
+        <input type="number" id="Kolicina" required min="1" max="99" value="1"><br><br>
+
+        <label for="Oslovljavanje">Kako da Vas oslovljavamo:</label>
+        <label for="Oslovljavanje">Gospodin</label>
+        <input type="radio" id="Oslovljavanje" value="Gospodin" name="Oslovljavanje">
+        <label for="Oslovljavanje">Gospođa</label>
+        <input type="radio" id="Oslovljavanje" value="Gospođa" name="Oslovljavanje">
+        <label for="Oslovljavanje">Nije bitno</label>
+        <input type="radio" id="Oslovljavanje" value="Nije bitno" name="Oslovljavanje"><br><br>
+
+        <label for="Adresa">Adresa:</label>
+        <input type="text" id="Adresa" required placeholder="Titova br.4"><br><br>
+
+        <label for="Komentar">Komentar:</label>
+        <textarea id="Komentar" rows="4" cols="25"></textarea><br><br>
+
+        <label for="Saglasanost">Imam više od 18 godina:</label>
+        <input type="checkbox" id="Saglasnost">
+
+
+
+
+        <br>
+        <br>
+        <input type="submit">
+        <input type="reset">
+
+
+    </form>
+
+</body>
+
+</html>
